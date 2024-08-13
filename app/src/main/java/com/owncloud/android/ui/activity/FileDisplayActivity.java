@@ -2217,7 +2217,7 @@ public class FileDisplayActivity extends FileActivity
         syncAndUpdateFolder(true);
     }
 
-    private void syncAndUpdateFolder(boolean ignoreETag) {
+    public void syncAndUpdateFolder(boolean ignoreETag) {
         syncAndUpdateFolder(ignoreETag, false);
     }
 
