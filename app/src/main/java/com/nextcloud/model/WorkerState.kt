@@ -16,4 +16,5 @@ sealed class WorkerState {
     data class Idle(var currentFile: OCFile?) : WorkerState()
     data class Download(var user: User?, var currentDownload: DownloadFileOperation?) : WorkerState()
     data class Upload(var user: User?, var uploads: List<OCUpload>) : WorkerState()
+    data object OfflineOperationsCompleted: WorkerState()
 }
